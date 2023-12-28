@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ishan-Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(0, 0, 33);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(18, 18, 62);
+        }
+
+        .logo {
+            width: 55px;
+            float: left;
+            margin-left: -80px;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(153, 153, 226);
+            font-size: 1.01rem;
+
+        }
+
+        main hr {
+            border: 0;
+            background-color: #9c97f1;
+            height: 1.2px;
+            margin: 40px 84px;
+        }
+
+        .left {
+            font-size: 2rem;
+            margin-left: -50px;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 130px 0;
+
+        }
+
+        .firstSection>div {
+            width: 35%;
+
+
+        }
+
+        .leftSection {
+
+            font-size: 3rem;
+
+        }
+
+        .leftSection .buttons .btn a {
+            text-decoration: none;
+
+        }
+
+        .leftSection .buttons .btn {
+            text-decoration: none;
+            padding: 12px;
+            color: white;
+            border: 2px solid #9c31ff;
+            border-radius: 15px;
+            background: lavender;
+            cursor: pointer;
+            display: inline-block;
+        }
+
+
+        .leftSection .buttons .btn:hover {
+            color: black;
+            border-color: lavender;
+            background-color: #9c97f1;
+        }
+
+
+        .rightSection img {
+            width: 80%;
+
+        }
+
+        .purple {
+            color: rgb(170, 107, 228);
+        }
+
+        .text-gray {
+            color: gray;
+        }
+
+        #element {
+            color: rgb(170, 107, 228);
+        }
+
+        .secondSection {
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+
+        .secondSection h1 {
+            font-size: 1.6rem;
+        }
+
+        .secondSection .box {
+            background: white;
+            width: 86vw;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+        }
+
+        .secondSection .vertical {
+            height: 65px;
+            width: 1px;
+            background-color: white;
+            margin: 0 76px;
+
+        }
+
+        .image-top {
+            width: 50px;
+            position: relative;
+            top: -55px;
+            left: -22px;
+        }
+
+        .vertical-title {
+            position: relative;
+            top: 15px;
+            width: 150px;
+            left: -10px;
+
+        }
+
+        .vertical-desc {
+            position: relative;
+            top: 20px;
+            left: -15px;
+            width: 130px;
+            color: gray;
+            font-size: 9px;
+        }
+
+        footer {
+            background-color: #0e0e1a;
+            height: 80px;
+        }
+
+        .footer {
+            display: flex;
+
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+
+        .footer ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        .footer ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        .name {
+            font-size: 2rem;
+            margin-left: 10px;
+        }
+
+        .rights {
+            color: grey;
+        }
+
+        .foot {
+            width: 40px;
+            float: left;
+
+        }
+
+        .contact {
+            width: 30px
+        }
+
+        @media screen and (max-width: 1350px) {
+
+            nav {
+                flex-direction: column;
+                height: 140px;
+            }
+
+            .firstSection {
+                flex-direction: column-reverse;
+                align-items: center;
+            }
+
+            .leftSection {
+
+                font-size: 2rem;
+
+                justify-content: center;
+                align-items: center;
+
+
+            }
+
+            .leftSection>div {
+                width: 150%;
+            }
+
+            .leftSection #element {
+                font-size: 2rem;
+                width: 120%;
+            }
+
+            .rightSection {
+                display: flex;
+
+                justify-content: center;
+                align-items: center;
+            }
+
+            .rightSection img {
+                width: 400px
+            }
+
+            .secondSection .box {
+                flex-direction: column;
+                width: 50vw;
+            }
+
+            .secondSection .vertical {
+                height: unset;
+
+
+            }
+
+            .secondSection {
+                height:80vh;
+            max-width: 80vw;
+            margin: auto;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .vertical-title,
+            .vertical-desc {
+                left: 45px;
+            }
+
+        
+            body {
+                min-width: fit-content;
+                height: unset;
+            }
+
+            .image-top {
+                width: 50px;
+                position: relative;
+                top: 80px;
+                left: -55px;
+            }
+            footer{
+                display: none;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img src="https://lh3.googleusercontent.com/a/ACg8ocIpkRfBBCvn9d15FmNm3ELtoBfIzMJiu-Rdtt4KWRVpkQ=s96-c-rg-br100"
+                alt="" class="logo">
+            <div class="left">Ishan's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="mailto:ishansrivastava2805@gmail.com?">Gmail</a></li>
+                    <li><a href="https://github.com/IshanAmrit28">Github</a></li>
+                    <li><a href="https://www.instagram.com/a_selenophile_me?igsh=NjJvbjd0ZGxocjlv">Instagram</a></li>
+                    <li><a href="linkedin.com/in/ishan-amrit-srivastava-23555a251">LinkedIn</a></li>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                <div>Hi, My name is <span class="purple">Ishan</span></div>
+
+                <div>and I am a passonate</div>
+                <span id="element"></span>
+                <div class="buttons">
+                    <button class="btn"><a
+                            href="https://drive.google.com/file/d/1poDhbhapJt7ahFjUV1SF8xs7l85pGSrN/view?usp=sharing"
+                            target="_blank">Download Resume</a></button>
+                    <button class="btn"><a href="https://github.com/IshanAmrit28" target="_blank">Visit
+                            Github</a></button>
+                </div>
+            </div>
+            <div class="rightSection">
+                <img src="bg.png" alt="">
+            </div>
+
+        </section>
+        <hr>
+        <section class="secondSection">
+            <span class="text-gray">What I have Learned So Far</span>
+            <h1>Skills Learned</h1>
+            <div class="box">
+                <div class="vertical">
+                    <img src="python.png" alt="" class="image-top">
+                    <div class="vertical-title">Python</div>
+                    <div class="vertical-desc">Started my prgraming journey with Python as the first language know upto
+                        intermediate python and its various libraries.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img src="sql.png" alt="" class="image-top">
+                    <div class="vertical-title">My SQL</div>
+                    <div class="vertical-desc">My SQL with its functionality and its lincking with Python and C++.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img src="web.png" alt="" class="image-top">
+                    <div class="vertical-title">Web Developement</div>
+                    <div class="vertical-desc">Frontend web developement with a basic knowledge of backend.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img src="java.png" alt="" class="image-top">
+                    <div class="vertical-title">Java</div>
+                    <div class="vertical-desc">Just a basic knowledge of java with its syntax, can switch to it without
+                        any issues.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img src="c.png" alt="" class="image-top">
+                    <div class="vertical-title">C</div>
+                    <div class="vertical-desc">Intermidiate level in C and its various libraries.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img src="dsa.png" alt="" class="image-top">
+                    <div class="vertical-title">DSA</div>
+                    <div class="vertical-desc">Advance level in Data structures and algorithm in both C and C++.
+                        </Canvas>
+                    </div>
+                </div>
+
+
+                <div class="vertical">
+                    <img src="cpp.png" alt="" class="image-top">
+                    <div class="vertical-title">C++</div>
+                    <div class="vertical-desc">My main Programing language and know at the Intermidiate level for
+                        competetive coding and DSA.
+                    </div>
+                </div>
+
+
+                <div class="vertical">
+                    <img src="analysis.png" alt="" class="image-top">
+                    <div class="vertical-title">Data Analysis</div>
+                    <div class="vertical-desc">Learned Data analysis in python using, nympy, matplot, seaborn and
+                        Pandas. And will continue it to the path of learning machine learning.
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+    
+        <footer>
+            <div class="footer">
+                <div class="first">
+                    <img src="https://lh3.googleusercontent.com/a/ACg8ocIpkRfBBCvn9d15FmNm3ELtoBfIzMJiu-Rdtt4KWRVpkQ=s96-c-rg-br100"
+                    alt="" class="foot">
+                    <span class="name">Ishan's Portfolio | </span><span class="rights">Copyright &copy; All rights
+                        reserved</span>
+                    </div>
+                    <div class="second">
+                        <ul>
+                            <li><a href="linkedin.com/in/ishan-amrit-srivastava-23555a251" target="_blank"><img src="linked.png" alt="" class="contact"></a></li>
+                            <li><a href="https://www.instagram.com/a_selenophile_me?igsh=NjJvbjd0ZGxocjlv" target="_blank"><img src="insta.png" alt="" class="contact"></a></li>
+                            <li><a href="https://github.com/IshanAmrit28" target="_blank"><img src="github.png" alt=""
+                                class="contact"></a></li>
+                                <li><a href="mailto:ishansrivastava2805@gmail.com?" target="_blank"><img src="gmail.png" alt=""
+                                    class="contact"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </footer>
+                    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Artist', 'Video Editor', 'Future AI engineer'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
